@@ -1,2 +1,8 @@
 # NLP-Submission-Dicoding
-This project is used to fulfill my first submission project in Advanced Machine Learning Course (Indonesian : Belajar Pengembangan Machine Learning) by Dicoding Academy. In this project, students should implement the NLP model with TensorFlow
+This project is used to fulfill my first submission project in Advanced Machine Learning Course (Indonesian : Belajar Pengembangan Machine Learning) by Dicoding Academy. In this project, students should implement the NLP model with TensorFlow. The reviewer gave me score 4 stars from 5 stars. 
+
+In this project, I want to create program about the hotel reviews. I used the Trip Advisor Hotel Reviews datasets, made by Larxel, from Kaggle.com (here's the link : https://www.kaggle.com/andrewmvd/trip-advisor-hotel-reviews). The dataset contains some reviews text from the customer and the rating. The rating has 5 scores (1, 2, 3, 4, 5). From this dataset, I want to implement the NLP Model with TensorFlow. 
+
+Before I implement the NLP Model and TensorFlow, I did data preprocessing. The first step, I ensure there is not N/A Value (Null Value). After that, I do a Tokenize Word and make all the capitalized letter changed to lower letter. It's used to splitted the Review Text Sentences into words. For your information, the review text in this dataset uses English, so the next step is removing all of the stopwords (for example : and, or, i, me, myself, we, he, etc.). I download the corpus of stopwords in English using NLTK library. The next step is stemming. I used SnowBall stemmer, it's used to chop all of the affix/suffix word to the stem word. The next step is, I grouped the rating scores. I grouped 1 and 2 into Bad scores, 3 is Neutral, 4 and 5 is Good scores. It's used to increase the val_accuracy. 
+
+I used 80% from the dataset for training data, and 20% for validation data
